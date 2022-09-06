@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+label{
+    color:#fff;
+}
+.mt{
+    margin-top:31px;
+}
+#loginFull{
+    position:relative;
+    height:100vh;
+}
+#signUp{
+    position:relative;
+    height:100vh;
+}
+.logIn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:60%;
+    margin:auto;
+    padding:50px 0;
+    background:rgb(18, 70, 71);
+}
+.logIn a{
+    color:#ffc107;
+}
+.logIn a:hover{
+    color:#ffc107;
+    text-decoration: none;
+}
+.signUp{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:60%;
+    margin:auto;
+    padding:50px 0;
+    background:rgb(18, 70, 71);
+}
+.success{
+    color:green;
+}
+.danger{
+    color:red;
+}
+
+select{
+    padding:5px 200px 5px 20px;
+}

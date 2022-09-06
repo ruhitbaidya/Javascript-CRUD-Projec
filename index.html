@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-dark">
+    <section id="loginFull" class="d-none">
+        <div class="container">
+            <div class="logIn">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h4 class="text-center text-light">Log In </h4>
+                        <p class="my-3" id="alert-Text"></p>
+                        <form id="logInForm">
+                            <label for="email">Email</label>
+                            <input type="text"  id="email" class="form-control">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" id="password" class="form-control">
+                            <button class="btn btn-block btn-outline-warning my-3">Log In</button>
+                            <a href="#" class="link-warning">If Your have No account Please SignUp</a>
+                        </form>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signUp" class="d-none">
+        <div class="container">
+            <div class="signUp">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <h4 class="text-center text-light">Singn Up</h4>
+                        <p class="my-3" id="alert-Texts"></p>
+                        <form id="signUpForm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="firstName">firstName</label>
+                                    <input type="text" id="firstName" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label for="lastName">LastName</label>
+                                    <input type="text" id="lastName" class="form-control">
+                                </div>
+                            </div>
+                            <label for="email">Email</label>
+                            <input type="text"  id="email" class="form-control">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" id="password" class="form-control">
+                            <button class="btn btn-block btn-outline-warning mt-3">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-body" class="">
+
+        <div class="container crudProgramming">
+            <div class="row">
+                <div class="col-md-12">
+                    <main class="my-3">
+                        <h5 class="bg-info p-2 text-center text-light">Student Register List</h5>
+                        <div class="form-submit">
+                            <form action="" id="studentsForma">  
+                                    <div class="row mt-3">
+                                        <div class="col-4 mb-3">            
+                                                <label for="Id">ID</label>
+                                                <input class="form-control" type="number" readonly id='Id'>   
+                                        </div>
+                                        <div class="col-8">
+                                            <div id="custom Message ">
+                                                <div id="alertText" class="text-center mt">
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="firstName">First Name</label>
+                                            <input id="firstName" class="form-control" type="text">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="lastName">Last Name</label>
+                                            <input id="lastName" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <label for="number">Roll No</label>
+                                            <input  class="form-control" type="number" name="" id="number">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="dataOf">Date Of Birth</label>
+                                            <input  class="form-control" type="date" name="" id="dataOf">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <button class="btn btn-primary btn-block">Submit</button>
+                                        </div>
+                                        
+                                    </div>
+                            </form>
+                        </div>
+                    </main><!-- main End-->
+                </div><!-- section End-->
+            </div> <!-- Row End-->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <table class="table text-center text-light">
+                        <thead>
+                           <tr>
+                            <th>Student ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Roll No</th>
+                            <th>Date Of Birth</th>
+                            <th>Action</th>
+                           </tr>
+                        </thead>
+                        <tbody id="mainContent"> 
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div><!-- maincol End-->
+    </section><!-- section End-->
+    <script src="index.js"></script>
+</body>
+</html>
